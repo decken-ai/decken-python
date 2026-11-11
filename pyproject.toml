@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decken"
+version = "1.1.0"
+description = "Official Python SDK and CLI for Decken — The Native OpenXML (.pptx) Slide Generation Kernel"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Decken", email = "api@decken.ai" }]
+urls = { Homepage = "https://decken.ai", Documentation = "https://docs.decken.ai", Repository = "https://github.com/decken-ai/decken-python" }
+
+[project.scripts]
+decken = "decken.__main__:main"
+decken-py = "decken.__main__:main"
